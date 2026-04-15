@@ -1,0 +1,178 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--font-family);
+}
+
+:root {
+  --blue-primary: #0A3251; /* Azul escuro do título e do banner "Realizou uma sessão" */
+  --blue-secondary: #2C6E9D; /* Azul mais claro dos detalhes e botões primários */
+  --blue-glow: #7ABFFF; /* Azul vibrante da palavra "Exchange" */
+  --text-gray: #545454; /* Cinza do texto corrido */
+  --bg-light: #F8F9FA; /* Fundo cinza claro dos cards */
+  --bg-white: #FFFFFF; /* Fundo branco */
+  --font-family: 'Poppins', sans-serif; 
+}
+
+body {
+  font-family: var(--font-family);
+  color: var(--text-gray);
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 1200px; 
+  margin: 0 auto;    
+  width: 100%;      
+}
+
+.btn-white {
+  background-color: white;
+  color: var(--blue-primary);
+  padding: 12px 24px;
+  border: none;
+  font-weight: bold;
+  margin-top: 25px;
+}
+
+
+.steps-section {
+  background-color: var(--bg-light); /* Fundo cinza claro */
+  padding: 80px 8%;
+  text-align: center;
+}
+
+.steps-section h2 {
+  color: var(--blue-primary);
+  font-size: 2.2rem;
+  margin-bottom: 15px;
+}
+
+.steps-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 colunas para os passos */
+  gap: 25px;
+  margin-top: 50px;
+}
+
+.step-card {
+  background-color: var(--bg-white);
+  padding: 30px;
+  border-radius: 12px;
+  text-align: left; /* Texto alinhado à esquerda como no Figma */
+  position: relative;
+  transition: transform 0.2s ease;
+}
+
+.step-card:hover {
+  transform: translateY(-5px);
+}
+
+.step-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.step-number {
+  background-color: var(--blue-secondary);
+  color: white;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.icon-container {
+  background-color: var(--blue-primary);
+  padding: 10px;
+  border-radius: 8px;
+}
+
+
+/* --- Resources Section --- */
+.resources-section {
+  padding: 80px 8%;
+  background-color: var(--bg-white);
+}
+
+.resources-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 40px;
+}
+
+.header-text h2 {
+  color: var(--blue-primary);
+  font-size: 2rem;
+  margin-bottom: 8px;
+}
+
+.view-all {
+  color: var(--blue-secondary);
+  text-decoration: none;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.9rem;
+}
+
+.resources-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.resource-card {
+  background: var(--bg-white);
+  padding: 30px;
+  border-radius: 12px;
+  border: 1px solid #edf2f7; /* Borda bem sutil como no Figma */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03); /* Sombra leve */
+  transition: all 0.3s ease;
+}
+
+.resource-card:hover {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+}
+
+.resource-icon-bg {
+  background-color: #E8F2F9; /* Azul bem clarinho de fundo do ícone */
+  width: 48px;
+  height: 48px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.resource-card h3 {
+  color: var(--blue-primary);
+  font-size: 1.25rem;
+  margin-bottom: 12px;
+}
+
+.resource-card p {
+  color: var(--text-gray);
+  font-size: 0.95rem;
+  margin-bottom: 20px;
+  min-height: 60px; /* Garante que os cards fiquem do mesmo tamanho */
+}
+
+.resource-link {
+  color: var(--blue-secondary);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}

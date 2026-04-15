@@ -1,0 +1,118 @@
+
+/* Seção HEADER */
+
+.landing-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 3rem;
+
+    background-color: rgb(255, 255, 255);
+
+}
+
+.logo-nav {
+    width: 60px;
+
+}
+
+.nav-links a {
+    color: var(--blue-primary);
+    text-decoration: none;
+    margin-left: 25px;
+    font-weight: 600;
+    font-size: 0.95rem;
+}
+
+.cta-header {
+    background-color: var(--blue-primary);
+    color: white;
+    padding: 13px 35px;
+    font-size: 0.95rem;
+    border: none;
+    letter-spacing: 1px;
+    border-radius: 8px;
+    font-weight: 600;
+}
+
+/* Seção BANNER */
+
+.hero-section {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+
+    /* Ajuste da Imagem e Overlay */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),
+            /* Escurece a imagem (0.5 é a opacidade) */
+            rgba(0, 0, 0, 0.5)),
+        url('../../assets/back-banner.webp');
+    /* Caminho da sua imagem otimizada */
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    /* Garante uma altura mínima para o banner aparecer bem */
+    min-height: 600px;
+  
+    display: flex;
+    align-items: center;
+    /* Centraliza o conteúdo verticalmente */
+    justify-content: center;
+}
+
+.hero-content {
+    max-width: 600px;
+    text-align: center;
+    margin: 0 auto;
+    padding: 2rem 0;
+    color: #ffffff;
+    /* Ajusta a cor do texto para branco já que o fundo escureceu */
+}
+
+.subtitle {
+    color: white;
+    font-weight: bold;
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+}
+
+.hero-title {
+    font-size: 3.5rem;
+    color: white;
+    font-weight: 800;
+    margin-bottom: 15px;
+}
+
+.hero-title .highlight {
+    color: var(--blue-glow);
+    /* Azul vibrante da palavra "Exchange" */
+}
+
+.quote {
+    font-style: italic;
+    font-size: 1.2rem;
+    margin-bottom: 25px;
+}
+
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 35px;
+}
+
+.cta-banner {
+    background-color: var(--blue-primary);
+    color: white;
+    padding: 60px 8%;
+    text-align: center;
+}
+
+.cta-content h2 {
+    font-size: 2.2rem;
+    margin-bottom: 15px;
+}

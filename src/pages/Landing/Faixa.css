@@ -1,0 +1,49 @@
+.flag-strip-container {
+  width: 100%;
+  height: 60px; /* Aumentei um pouco para acomodar bandeiras maiores */
+  background-color: var(--bg-white);
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.flag-track {
+  display: flex;
+  width: max-content;
+  gap: 1.5rem; 
+  animation: scrollFlags 30s linear infinite; 
+}
+
+.flag-item {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.country-flag {
+  /* AUMENTAR O TAMANHO: de 35px para 50px */
+  width: 50px;
+  height: 32px; 
+  object-fit: cover;
+  border-radius: 4px; /* Aumentei levemente o arredondamento para combinar com o tamanho */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+.country-code {
+  font-size: 0.9rem; /* Aumentei um pouco a fonte para acompanhar */
+  font-weight: 700;
+  color: #444;
+}
+
+/* A animação permanece igual, pois o -50% é relativo ao tamanho total do track */
+@keyframes scrollFlags {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
