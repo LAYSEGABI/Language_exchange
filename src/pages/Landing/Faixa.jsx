@@ -11,7 +11,7 @@ const Faixa = () => {
   return (
     <div className="flag-strip-container">
       <div className="flag-track">
-        {countries.concat(countries).map((code, index) => (
+        {countries.concat(countries, countries, countries).map((code, index) => (
           <div key={index} className="flag-item">
             <img
               /* Alterado para carregar uma versão de maior resolução (w160) */

@@ -2,6 +2,8 @@ import React from "react";
 import "./styles.css";
 import "./hero.css"
 import logoGlobalShapers from "../../assets/logo-azul-GSF.svg";
+import { MapPin } from 'lucide-react';
+import { UserPlus } from 'lucide-react';
 
 const HeroSection = () => {
   return (
@@ -19,7 +21,7 @@ const HeroSection = () => {
           <div className="nav-links">
             <a href="#projeto">O Projeto</a>
             <a href="#como-funciona">Como funciona</a>
-            <a href="#recursos">Recursos</a>
+            <a href="#nosso-hub">Hub Florianópolis</a>
             <a href="#contato">Contato</a>
           </div>
           <button className="cta-header">Faça parte</button>
@@ -31,9 +33,11 @@ const HeroSection = () => {
     <section className="hero-section">
       <div className="container">
         <div className="hero-content">
-          <p className="subtitle">HUB FLORIANÓPOLIS, BRAZIL</p>
-          <h1 className="hero-title">
-            Language <span className="highlight">Exchange</span>
+         <div className="subtitle-badge">
+            <MapPin className="subtitle-icon" size={16} />
+            <span className="subtitle-text">HUB FLORIANÓPOLIS, BRAZIL</span>
+          </div>
+          <h1 className="hero-title">Language <span className="highlight">Exchange</span>
           </h1>
           <p className="quote">"From words to worlds"</p>
           <p className="description">
@@ -42,8 +46,11 @@ const HeroSection = () => {
             comunidade global.
           </p>
           <div className="hero-buttons">
-            <button className="btn-primary">Começar agora</button>
-            <button className="btn-outline">Saiba mais</button>
+           <button className="cta-banner-1">
+  <UserPlus size={20} strokeWidth={2.5} />
+  Começar agora
+</button>
+            <button className="cta-banner-2">Saiba mais</button>
           </div>
         </div>
       </div>

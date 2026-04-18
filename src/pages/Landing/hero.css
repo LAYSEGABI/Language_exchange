@@ -1,4 +1,3 @@
-
 /* Seção HEADER */
 
 .landing-nav {
@@ -16,12 +15,36 @@
 
 }
 
+.nav-links {
+    display: flex;
+    gap: 25px;
+
+}
+
 .nav-links a {
     color: var(--blue-primary);
     text-decoration: none;
-    margin-left: 25px;
     font-weight: 600;
     font-size: 0.95rem;
+    position: relative;
+}
+
+/* Criando a linha base */
+.nav-links a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: rgb(6, 127, 207);
+    transition: width 0.5s ease;
+}
+
+/* Efeito ao passar o mouse */
+.nav-links a:hover::after {
+    width: 100%;
+    /* Expande a linha totalmente para a direita */
 }
 
 .cta-header {
@@ -33,6 +56,41 @@
     letter-spacing: 1px;
     border-radius: 8px;
     font-weight: 600;
+    transition: .5s;
+    box-shadow: 2px 4px 3px rgba(0, 0, 0, 0.2);
+
+}
+
+.cta-header:hover {
+    background-color: rgb(19, 75, 158);
+    transform: scale(.95);
+    box-shadow: none;
+}
+
+@media (max-width: 750px) {
+    .nav-links a:nth-child(3) {
+        display: none;
+    }
+}
+
+@media (max-width: 650px) {
+    .landing-nav {
+        padding: 5px 1.5rem;
+    }
+
+    .nav-links a:nth-child(4) {
+        display: none;
+    }
+
+    .nav-links a:nth-child(1) {
+        display: none;
+    }
+}
+
+@media (max-width: 400px) {
+    .nav-links a:nth-child(2) {
+        display: none;
+    }
 }
 
 /* Seção BANNER */
@@ -57,7 +115,7 @@
 
     /* Garante uma altura mínima para o banner aparecer bem */
     min-height: 600px;
-  
+
     display: flex;
     align-items: center;
     /* Centraliza o conteúdo verticalmente */
@@ -65,7 +123,6 @@
 }
 
 .hero-content {
-    max-width: 600px;
     text-align: center;
     margin: 0 auto;
     padding: 2rem 0;
@@ -73,46 +130,166 @@
     /* Ajusta a cor do texto para branco já que o fundo escureceu */
 }
 
-.subtitle {
+
+.subtitle-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+
+    background-color: rgba(255, 255, 255, 0.1);
     color: white;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+
+    /* O EFEITO DE BLUR (GLASSMORPHISM) */
+    backdrop-filter: blur(8px);
+    /* Desfoca o que está atrás do badge */
+    -webkit-backdrop-filter: blur(8px);
+    /* Suporte para Safari */
+
+    /* Forma e Espaçamento */
+    padding: 6px 16px;
+    /* Espaço interno */
+    border-radius: 50px;
+    /* Bordas totalmente arredondadas (estilo pílula) */
+
+    /* Tipografia baseada na sua antiga */
     font-weight: bold;
-    font-size: 0.9rem;
-    margin-bottom: 10px;
+    font-size: 0.85rem;
+    /* Ligeiramente menor para caber no badge */
+    letter-spacing: 0.5px;
+    /* Espaçamento entre letras para sofisticação */
+
+    /* Centralização no Hero */
+    margin: 0 auto 1.5rem auto;
+    /* Centraliza e dá espaço para o título */
+}
+
+
+.subtitle-icon {
+    color: rgba(255, 255, 255, 0.9);
 }
 
 .hero-title {
     font-size: 3.5rem;
     color: white;
     font-weight: 800;
-    margin-bottom: 15px;
 }
 
 .hero-title .highlight {
-    color: var(--blue-glow);
-    /* Azul vibrante da palavra "Exchange" */
+    background: linear-gradient(90deg, #00d2ff 0%, #3a7bd5 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+    font-weight: 800;
 }
 
 .quote {
     font-style: italic;
-    font-size: 1.2rem;
-    margin-bottom: 25px;
+    font-size: 1.4rem;
+    font-weight: thin;
+    margin-bottom: 35px;
+    letter-spacing: 2px;
+}
+
+.description {
+    max-width: 700px;
+    letter-spacing: 1px;
+    line-height: 1.15;
+    margin: 0 auto;
 }
 
 .hero-buttons {
     display: flex;
     justify-content: center;
-    gap: 15px;
+    gap: 35px;
     margin-top: 35px;
 }
 
-.cta-banner {
-    background-color: var(--blue-primary);
+.cta-banner-1 {
+    /* Alinhamento de ícone e texto */
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    /* Espaço entre o ícone e o texto */
+
+    /* Estilos base que você já tem */
+    background-color: var(--blue-glow);
     color: white;
-    padding: 60px 8%;
-    text-align: center;
+    /* Ajustado para branco conforme a referência */
+    padding: 15px 25px;
+    border: none;
+    font-weight: bold;
+    border-radius: 8px;
+    /* Aumentei um pouco para ficar mais arredondado como na foto */
+    transition: 0.6s;
+    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.2);
+    font-size: 1rem;
+    cursor: pointer;
 }
 
-.cta-content h2 {
-    font-size: 2.2rem;
-    margin-bottom: 15px;
+.cta-banner-1:hover {
+    background-color: rgb(19, 75, 158);
+    transform: scale(0.96);
+    box-shadow: none;
+}
+
+/* Ajuste fino para o ícone se necessário */
+.cta-banner-1 svg {
+    flex-shrink: 0;
+}
+
+.cta-banner-2 {
+    background-color: transparent;
+    color: white;
+    padding: 15px 25px;
+    border: 1px solid white;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: .6s;
+    font-size: 1rem;
+}
+
+.cta-banner-2:hover {
+    background-color: white;
+    color: var(--blue-primary);
+    transform: scale(.95);
+}
+
+@media (max-width: 670px) {
+    .hero-content {
+        padding: 0 2rem;
+    }
+
+    .hero-title {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 670px) {
+
+     .hero-content {
+        padding: 0 1rem;
+    }
+
+    .hero-title {
+        line-height: 1.3;
+    }
+
+    .quote {
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+
+    .hero-buttons {
+        gap: 20px;
+    }
+
+    .cta-banner-1 {
+        padding: 10px 20px;
+        font-size: .9rem;
+        
+    }
+
 }

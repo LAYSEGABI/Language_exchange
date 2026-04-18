@@ -14,7 +14,7 @@
   display: flex;
   width: max-content;
   gap: 1.5rem; 
-  animation: scrollFlags 30s linear infinite; 
+  animation: scrollFlags 40s linear infinite; 
 }
 
 .flag-item {

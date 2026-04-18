@@ -7,3 +7,27 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+/* 1. Define a largura da barra */
+::-webkit-scrollbar {
+  width: 10px; /* Barra vertical */
+  height: 10px; /* Barra horizontal */
+}
+
+/* 2. O fundo da barra (a trilha) */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+  border-radius: 10px;
+}
+
+/* 3. A parte que se move (o "polegar") */
+::-webkit-scrollbar-thumb {
+  background: rgb(1, 145, 228); /* Usando sua variável de azul */
+  border-radius: 10px;
+  border: 2px solid #f1f1f1; /* Cria um espaçamento sutil em volta */
+}
+
+/* 4. Efeito ao passar o mouse na barra */
+::-webkit-scrollbar-thumb:hover {
+  background: #134b9e; /* Um azul mais escuro no hover */
+}
