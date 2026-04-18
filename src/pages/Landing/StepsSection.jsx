@@ -1,54 +1,91 @@
-import React from 'react';
-import './styles.css';
-import { UserPlus, Search, CalendarDays, MessageSquareText } from 'lucide-react';
+import {
+  UserPlus,
+  Users,
+  CalendarDays,
+  MessageCircle, 
+  Workflow
+} from "lucide-react";
 
-const stepsData = [
-  { 
-    number: 1, 
-    icon: <UserPlus size={32} color="#FFFFFF" />, 
-    title: "Registre-se", 
-    description: "Crie seu perfil e indique os idiomas que domina e os que quer aprender." 
+import "./steps-section.css";
+
+const steps = [
+  {
+    number: "1",
+    icon: <UserPlus size={28} />,
+    title: "Registre-se",
+    description:
+      "Crie seu perfil, aguarde aprovação e indique os idiomas que domina e os que quer aprender.",
   },
-  { 
-    number: 2, 
-    icon: <Search size={32} color="#FFFFFF" />, 
-    title: "Encontre Match", 
-    description: "Nossa plataforma sugere parceiros ideais para você praticar." 
+  {
+    number: "2",
+    icon: <Users size={28} />,
+    title: "Encontre Match",
+    description:
+      "Busque parceiros com interesses compatíveis na nossa base de dados.",
   },
-  { 
-    number: 3, 
-    icon: <CalendarDays size={32} color="#FFFFFF" />, 
-    title: "Agende", 
-    description: "Combine um horário que funcione para ambos via chat ou e-mail." 
+  {
+    number: "3",
+    icon: <CalendarDays size={28} />,
+    title: "Agende",
+    description:
+      "Combine um horário que funcione para ambos via chat ou e-mail.",
   },
-  { 
-    number: 4, 
-    icon: <MessageSquareText size={32} color="#FFFFFF" />, 
-    title: "Pratique", 
-    description: "Realize a call e compartilhe sua experiência!" 
+  {
+    number: "4",
+    icon: <MessageCircle size={28} />,
+    title: "Pratique",
+    description:
+      "Realize sua sessão de conversação e divirta-se aprendendo.",
   },
 ];
 
-const StepsSection = () => {
+const ComoFunciona = () => {
   return (
-    <section id="como-funciona" className="steps-section">
-      <h2>Como funciona</h2>
-      <p>Siga o passo a passo para se conectar e praticar</p>
+    <section className="como-container">
 
-      <div className="steps-grid">
-        {stepsData.map((step) => (
-          <div key={step.number} className="step-card">
-            <div className="step-header">
-              <span className="step-number">{step.number}</span>
-              <div className="icon-container">{step.icon}</div>
+      <div className="como-header">
+        <div className="header-icon">
+  <Workflow size={30} />
+</div>
+
+        <h2 className="section-title">
+          Como funciona
+        </h2>
+
+        <p className="section-subtitle">
+          Siga o passo a passo para iniciar sua jornada cultural
+        </p>
+
+      </div>
+
+      <div className="como-steps">
+
+        {steps.map((step, index) => (
+          <div key={index} className="step-card">
+
+            <div className="step-number">
+              {step.number}
             </div>
-            <h3>{step.title}</h3>
-            <p>{step.description}</p>
+
+            <div className="step-icon">
+              {step.icon}
+            </div>
+
+            <h3 className="step-title">
+              {step.title}
+            </h3>
+
+            <p className="step-description">
+              {step.description}
+            </p>
+
           </div>
         ))}
+
       </div>
+
     </section>
   );
 };
 
-export default StepsSection;
+export default ComoFunciona;

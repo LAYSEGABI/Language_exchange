@@ -1,0 +1,182 @@
+.projeto-container {
+    background-color: #ffffff;
+    padding: 80px 20px;
+    font-family: 'Inter', sans-serif;
+}
+
+.projeto-content {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.projeto-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+/* GRID */
+
+.projeto-grid {
+    display: flex;
+    gap: 40px;
+
+}
+
+/* IMAGEM */
+
+.projeto-image-wrapper {
+    flex: 1;
+    max-width: 43%;
+}
+.projeto-img {
+    width: 100%;
+    height: auto;
+    border-radius: 24px;
+    display: block;
+}
+
+.projeto-info {
+    flex: 1;
+    max-width: 50%;
+}
+
+/* TEXTO */
+
+.projeto-extra {
+    margin-bottom: 20px;
+}
+
+.projeto-text-small {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #0b2346;
+    margin-bottom: 10px;
+}
+
+.projeto-origin {
+    font-size: 0.9rem;
+    color: #556780;
+    margin-bottom: 16px;
+}
+
+/* PALAVRAS DESTACADAS */
+
+.highlight-blue {
+    color: #2389ff;
+    font-weight: 600;
+}
+
+/* STATS */
+
+.projeto-stats {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.stat-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background: #c5e3ec;
+    border-radius: 10px;
+
+    padding: 8px 18px;
+    min-width: 80px;
+}
+
+.stat-card strong {
+    font-size: 1.2rem;
+    color: #0f172a;
+}
+
+.stat-card span {
+    font-size: 0.75rem;
+    color: #475569;
+}
+
+/* LISTA */
+
+.projeto-list {
+    list-style: none;
+    padding: 0;
+
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+
+    margin-top: 25px;
+}
+
+.projeto-list li {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    font-size: 1.05rem;
+    color: #1e293b;
+    font-weight: 600;
+}
+
+.list-icon {
+    color: #128ada;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-shrink: 0;
+}
+
+/* ========================= */
+/* RESPONSIVIDADE */
+/* ========================= */
+
+/* TABLET */
+@media (max-width: 900px) {
+
+    .projeto-container {
+        padding: 60px 20px;
+    }
+
+    .projeto-grid {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .projeto-image-wrapper,
+    .projeto-info {
+        max-width: 100%;
+    }
+
+    /* imagem aparece primeiro no mobile */
+    .projeto-image-wrapper {
+        order: -1;
+    }
+
+}
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+
+    .projeto-container {
+        padding: 50px 16px;
+    }
+
+    .projeto-text-small {
+        font-size: 1rem;
+    }
+
+    .projeto-list li {
+        font-size: 0.95rem;
+    }
+
+    .stat-card {
+        padding: 6px 14px;
+        min-width: 70px;
+    }
+
+}
