@@ -1,7 +1,7 @@
 /* 1. O Wrapper ocupa a largura total e define a cor de fundo da seção */
 .resources-section-wrapper {
   position: relative;
-  background-color: #d8e5eb; /* Cor levemente azulada/cinza para destacar do branco */
+  background-color: #ffffff; /* Cor levemente azulada/cinza para destacar do branco */
   width: 100%;
   padding: 4rem 0 ; /* Aumentei o padding top por causa da curva */
   margin: 0;

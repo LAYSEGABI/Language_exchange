@@ -1,3 +1,32 @@
+.faq-section-wrapper {
+  position: relative;
+  background-color: #0f172a; /* Fundo Escuro do FAQ */
+  width: 100%;
+  padding: 100px 0 80px 0;
+  z-index: 1; /* Garante que esta seção não suma */
+}
+
+.custom-shape-divider-top-faq {
+  position: absolute;
+  top: -1px; /* O -1px evita uma linha branca de erro de renderização */
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  z-index: 2;
+}
+
+.custom-shape-divider-top-faq svg {
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 80px;
+}
+
+.custom-shape-divider-top-faq .shape-fill {
+  /* ATENÇÃO: Essa cor deve ser IGUAL ao background da seção de RECURSOS */
+  fill: #ffffff; 
+}
+
 .faq-section {
   padding: 4rem 20px;
   background-color: #0f172a;
@@ -7,6 +36,7 @@
   max-width: 800px; /* FAQ fica melhor em um container mais estreito */
   margin: 0 auto;
 }
+
 
 /* Cabeçalho Padronizado */
 .section-header-centered {
