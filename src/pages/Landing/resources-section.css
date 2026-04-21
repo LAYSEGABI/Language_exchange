@@ -1,9 +1,9 @@
 /* 1. O Wrapper ocupa a largura total e define a cor de fundo da seção */
 .resources-section-wrapper {
   position: relative;
-  background-color: #f8faff; /* Cor levemente azulada/cinza para destacar do branco */
+  background-color: #d8e5eb; /* Cor levemente azulada/cinza para destacar do branco */
   width: 100%;
-  padding: 3.5rem 0 ; /* Aumentei o padding top por causa da curva */
+  padding: 4rem 0 ; /* Aumentei o padding top por causa da curva */
   margin: 0;
 }
 
@@ -26,7 +26,7 @@
 }
 
 .custom-shape-divider-top .shape-fill {
-  fill: #e6f1fc; /* Cor da seção de CIMA (Herosection/Como funciona) */
+  fill: #ecf3fa; /* Cor da seção de CIMA (Herosection/Como funciona) */
 }
 
 /* 3. O Container interno centraliza o conteúdo */

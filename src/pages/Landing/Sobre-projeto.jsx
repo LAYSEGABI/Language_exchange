@@ -24,22 +24,17 @@ const ConhecaProjeto = () => {
           <div className="projeto-info">
             <div className="projeto-extra">
               <p className="projeto-text-small">
-                We’re part of a global network connecting people from different
-                cultures, backgrounds, and languages. Through meaningful
-                conversations and shared experiences, we create opportunities to
-                practice languages,
-                <span className="highlight-blue"> build confidence</span>, form
-                <span className="highlight-blue"> friendships</span>, and unlock
-                <span className="highlight-blue">
-                  {" "}
-                  real global opportunities
+                Fazemos parte de uma rede global que conecta pessoas de diferentes
+                culturas, origens e idiomas. Por meio de conversas
+                significativas e experiências compartilhadas, criamos
+                oportunidades para praticar idiomas, desenvolver confiança,
+                formar amizades e abrir portas para <span className="highlight-blue">oportunidades globais reais.
                 </span>
                 .
               </p>
 
               <p className="projeto-origin">
-                Created in <strong>July 2025</strong> by the{" "}
-                <strong>Florianópolis Hub</strong>.
+                Criado em julho de 2025 pelo Hub de Florianópolis.
               </p>
 
               <div className="projeto-stats">
