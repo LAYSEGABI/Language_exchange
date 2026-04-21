@@ -2,7 +2,7 @@
 .como-section-wrapper {
     position: relative;
     background: #e6f1fc; /* O azul claro da seção */
-    padding: 3rem 0; /* Espaço para o divisor */
+    padding: 4rem 0; /* Espaço para o divisor */
     width: 100%;
 }
 
@@ -43,29 +43,6 @@
     align-items: center;
 }
 
-.header-icon {
-    background: #ffffff; /* Branco para destacar no fundo azul */
-    width: 54px;
-    height: 54px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 16px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
-}
-
-.section-title {
-    font-size: 2rem;
-    font-weight: 800;
-    color: #0f172a;
-    margin-bottom: 8px;
-}
-
-.section-subtitle {
-    font-size: 1.1rem;
-    color: #475569;
-}
 
 /* STEPS GRID */
 .como-steps {
