@@ -16,7 +16,7 @@ const Footer = () => {
             <div className="footer-group">
               <h3>Contato</h3>
               <a href="mailto:shapersfloripa@gmail.com"><Mail size={14} /> shapersfloripa@gmail.com</a>
-              <p>Florianópolis Hub, Brasil</p>
+              
             </div>
             <div className="footer-group">
               <a href="#">Facebook <ArrowUpRight size={14} /></a>

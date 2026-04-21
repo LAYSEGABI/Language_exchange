@@ -1,8 +1,10 @@
 /* WRAPPER PRINCIPAL - Largura total */
 .como-section-wrapper {
     position: relative;
-    background: #e6f1fc; /* O azul claro da seção */
-    padding: 4rem 0; /* Espaço para o divisor */
+    background: #e6f1fc;
+    /* O azul claro da seção */
+    padding: 4rem;
+    /* Espaço para o divisor */
     width: 100%;
 }
 
@@ -24,7 +26,8 @@
 }
 
 .custom-shape-divider-top-steps .shape-fill {
-    fill: #ffffff; /* Cor da seção de cima (Hero/Projeto) */
+    fill: #ffffff;
+    /* Cor da seção de cima (Hero/Projeto) */
 }
 
 /* CONTAINER INTERNO CENTRALIZADO */
@@ -47,9 +50,11 @@
 /* STEPS GRID */
 .como-steps {
     display: flex;
-    gap: 32px; /* Aumentei um pouco o gap */
+    gap: 32px;
+    /* Aumentei um pouco o gap */
     flex-wrap: wrap;
     justify-content: center;
+
 }
 
 /* CARD */
@@ -60,8 +65,9 @@
     max-width: 260px;
     background: #ffffff;
     padding: 32px 24px;
-    border-radius: 20px; /* Bordas mais orgânicas */
-    box-shadow: 0 10px 20px rgba(0,0,0,0.03);
+    border-radius: 20px;
+    /* Bordas mais orgânicas */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.03);
     display: flex;
     flex-direction: column;
     transition: all 0.3s ease;
@@ -69,7 +75,7 @@
 
 .step-card:hover {
     transform: translateY(-8px);
-    box-shadow: 0 15px 30px rgba(0,0,0,0.06);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.06);
 }
 
 /* NUMBER */
@@ -119,7 +125,9 @@
     .como-steps {
         flex-direction: column;
         align-items: center;
+        padding: 0 1.5rem;
     }
+
     .step-card {
         max-width: 100%;
         width: 100%;

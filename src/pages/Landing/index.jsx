@@ -19,6 +19,7 @@ const Landing = () => {
       <StepsSection />
       <Resources />
       <FAQ />
+      <Faixa />
       <Duvidas />
       <Footer />
     </div>
