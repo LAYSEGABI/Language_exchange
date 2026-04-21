@@ -1,135 +1,150 @@
-.como-container {
-    background: #e6f1fc;
-    padding: 80px 20px;
-    font-family: 'Inter', sans-serif;
+/* WRAPPER PRINCIPAL - Largura total */
+.como-section-wrapper {
+    position: relative;
+    background: #e6f1fc; /* O azul claro da seção */
+    padding: 3rem 0; /* Espaço para o divisor */
+    width: 100%;
+}
+
+/* DIVIDER */
+.custom-shape-divider-top-steps {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-steps svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 80px;
+}
+
+.custom-shape-divider-top-steps .shape-fill {
+    fill: #ffffff; /* Cor da seção de cima (Hero/Projeto) */
+}
+
+/* CONTAINER INTERNO CENTRALIZADO */
+.como-inner-content {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
 
 /* HEADER */
-
-.como-header {
+.section-header-centered {
     text-align: center;
     margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-/* STEPS */
-
-.como-steps {
-    max-width: 1100px;
-    margin: 0 auto;
-
+.header-icon {
+    background: #ffffff; /* Branco para destacar no fundo azul */
+    width: 54px;
+    height: 54px;
+    border-radius: 50%;
     display: flex;
-    gap: 24px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 16px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
 
+.section-title {
+    font-size: 2rem;
+    font-weight: 800;
+    color: #0f172a;
+    margin-bottom: 8px;
+}
+
+.section-subtitle {
+    font-size: 1.1rem;
+    color: #475569;
+}
+
+/* STEPS GRID */
+.como-steps {
+    display: flex;
+    gap: 32px; /* Aumentei um pouco o gap */
     flex-wrap: wrap;
     justify-content: center;
 }
 
 /* CARD */
-
 .step-card {
     position: relative;
-
     flex: 1;
     min-width: 240px;
     max-width: 260px;
-
     background: #ffffff;
-
-    padding: 28px 24px;
-    border-radius: 16px;
-
-    box-shadow: 0 4px 12px rgba(0,0,0,0.04);
-
+    padding: 32px 24px;
+    border-radius: 20px; /* Bordas mais orgânicas */
+    box-shadow: 0 10px 20px rgba(0,0,0,0.03);
     display: flex;
     flex-direction: column;
-
-    transition: 0.2s ease;
+    transition: all 0.3s ease;
 }
 
 .step-card:hover {
-    transform: translateY(-4px);
+    transform: translateY(-8px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.06);
 }
 
 /* NUMBER */
-
 .step-number {
     position: absolute;
-
     top: -12px;
     left: -12px;
-
     width: 36px;
     height: 36px;
-
     background: #1d4ed8;
     color: white;
-
     border-radius: 50%;
-
     display: flex;
     align-items: center;
     justify-content: center;
-
     font-weight: 700;
     font-size: 0.9rem;
+    box-shadow: 0 4px 8px rgba(29, 78, 216, 0.3);
 }
-
-/* ICON */
 
 .step-icon {
     color: #1d4ed8;
     margin-bottom: 16px;
 }
 
-/* TEXT */
-
 .step-title {
-    font-size: 1.2rem;
+    font-size: 1.25rem;
     font-weight: 700;
-    color: #0f172a;
-
-    margin-bottom: 8px;
+    color: #1e293b;
+    margin-bottom: 12px;
 }
 
 .step-description {
     font-size: 0.95rem;
-    line-height: 1.5;
-
-    color: #475569;
+    line-height: 1.6;
+    color: #64748b;
 }
 
 /* RESPONSIVO */
-
-/* TABLET */
-
 @media (max-width: 900px) {
-
-    .como-container {
-        padding: 60px 20px;
+    .como-section-wrapper {
+        padding: 100px 0 60px 0;
     }
-
-    .step-card {
-        min-width: 220px;
-    }
-
 }
 
-/* MOBILE */
-
 @media (max-width: 600px) {
-
-    .como-container {
-        padding: 50px 2rem;
-    }
-
     .como-steps {
         flex-direction: column;
         align-items: center;
     }
-
     .step-card {
         max-width: 100%;
         width: 100%;
     }
-
 }

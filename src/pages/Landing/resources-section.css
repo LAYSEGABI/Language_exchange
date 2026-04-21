@@ -3,7 +3,7 @@
   position: relative;
   background-color: #f8faff; /* Cor levemente azulada/cinza para destacar do branco */
   width: 100%;
-  padding: 3.5rem 2rem ; /* Aumentei o padding top por causa da curva */
+  padding: 3.5rem 0 ; /* Aumentei o padding top por causa da curva */
   margin: 0;
 }
 
