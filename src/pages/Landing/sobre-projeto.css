@@ -1,7 +1,6 @@
 .projeto-container {
     background-color: #ffffff;
     padding: 80px 20px;
-    font-family: 'Inter', sans-serif;
 }
 
 .projeto-content {
@@ -9,10 +8,6 @@
     margin: 0 auto;
 }
 
-.projeto-header {
-    text-align: center;
-    margin-bottom: 40px;
-}
 
 /* GRID */
 
@@ -141,8 +136,12 @@
         padding: 60px 20px;
     }
 
+    .projeto-info {
+        padding: 0 1rem;
+    }
+
     .projeto-grid {
-        flex-direction: column;
+        flex-direction: column-reverse;
         gap: 30px;
     }
 

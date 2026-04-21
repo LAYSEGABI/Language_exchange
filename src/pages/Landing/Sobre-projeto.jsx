@@ -6,7 +6,7 @@ const ConhecaProjeto = () => {
   return (
     <section className="projeto-container">
       <div className="projeto-content">
-        <div className="projeto-header">
+        <div className="section-header">
           <div className="header-icon">
             <Globe2 size={30} />
           </div>

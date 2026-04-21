@@ -1,0 +1,104 @@
+/* 1. O Wrapper ocupa a largura total e define a cor de fundo da seção */
+.resources-section-wrapper {
+  position: relative;
+  background-color: #f8faff; /* Cor levemente azulada/cinza para destacar do branco */
+  width: 100%;
+  padding: 3.5rem 2rem ; /* Aumentei o padding top por causa da curva */
+  margin: 0;
+}
+
+/* 2. O Divider agora gruda no topo do wrapper */
+.custom-shape-divider-top {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-top svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 80px;
+  margin-top: -1px;
+}
+
+.custom-shape-divider-top .shape-fill {
+  fill: #e6f1fc; /* Cor da seção de CIMA (Herosection/Como funciona) */
+}
+
+/* 3. O Container interno centraliza o conteúdo */
+.resources-inner-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Header centralizado */
+.section-header-centered {
+  text-align: center;
+  margin-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+/* Grid e Cards */
+.resources-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 24px;
+}
+
+.resource-card {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 20px;
+  padding: 32px;
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.resource-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px -10px rgba(0, 0, 0, 0.08);
+}
+
+.icon-wrapper {
+  background-color: #eff6ff;
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.resource-card h3 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #1e293b;
+  margin-bottom: 12px;
+}
+
+.resource-card p {
+  font-size: 15px;
+  color: #475569;
+  line-height: 1.6;
+  margin-bottom: 24px;
+  flex-grow: 1;
+}
+
+.card-link {
+  display: flex;
+  align-items: center;
+  color: #2563eb;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 14px;
+}

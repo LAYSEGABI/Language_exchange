@@ -25,6 +25,13 @@ body {
   line-height: 1.6;
 }
 
+.section-header {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+    margin-bottom: 40px;
+}
+
 .header-icon {
     display: flex;
     justify-content: center;
@@ -44,6 +51,12 @@ body {
     text-align: center;
     align-self: center;
 
+}
+
+@media (max-width: 600px) {
+  .section-subtitle {
+    max-width: 300px;
+  }
 }
 
 .container {
