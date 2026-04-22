@@ -1,0 +1,76 @@
+.resources-header {
+  margin: 20px 0 40px 0;
+}
+
+.resources-header h2 {
+  font-size: 1.8rem;
+  color: #0A3251;
+  font-weight: 700;
+}
+
+.resources-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 24px;
+}
+
+.resource-card {
+  background: white;
+  border-radius: 20px;
+  padding: 32px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.2s;
+  border: 1px solid #f8fafc;
+}
+
+.resource-card:hover {
+  transform: translateY(-5px);
+}
+
+.resource-icon-wrapper {
+  margin-bottom: 24px;
+}
+
+.resource-card h3 {
+  font-size: 1.1rem;
+  color: #1e293b;
+  margin-bottom: 12px;
+  font-weight: 700;
+}
+
+.resource-card p {
+  font-size: 0.9rem;
+  color: #64748b;
+  line-height: 1.5;
+  margin-bottom: 20px;
+  flex-grow: 1;
+}
+
+.resource-link {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #0A3251;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 0.85rem;
+}
+
+.resource-link:hover {
+  text-decoration: underline;
+}
+
+/* Cores dos Ícones */
+.icon-blue { color: #3b82f6; }
+.icon-purple { color: #a855f7; }
+.icon-green { color: #10b981; }
+.icon-orange { color: #f97316; }
+.icon-pink { color: #ec4899; }
+
+@media (max-width: 768px) {
+  .resources-grid {
+    grid-template-columns: 1fr;
+  }
+}

@@ -4,7 +4,7 @@ import ImgHub from "../../assets/img-hub.png";
 
 const ConhecaProjeto = () => {
   return (
-    <section className="projeto-container">
+    <section id="projeto" className="projeto-container">
       <div className="projeto-content">
         <div className="section-header">
           <div className="header-icon">

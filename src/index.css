@@ -31,3 +31,8 @@
 ::-webkit-scrollbar-thumb:hover {
   background: #134b9e; /* Um azul mais escuro no hover */
 }
+
+a {
+  text-decoration: none;
+  color: inherit;
+}

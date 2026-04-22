@@ -1,0 +1,114 @@
+.partner-card {
+  background: white;
+  border-radius: 20px;
+  padding: 24px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  transition: transform 0.2s, box-shadow 0.2s;
+  border: 1px solid #f1f5f9;
+}
+
+.partner-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(10, 50, 81, 0.08);
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.card-avatar {
+  width: 52px;
+  height: 52px;
+  border-radius: 12px;
+  background-color: #f8fafc;
+  object-fit: cover;
+}
+
+.card-titles h4 {
+  margin: 0;
+  color: #1e293b;
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.card-titles span {
+  font-size: 0.75rem;
+  color: #94a3b8;
+  font-weight: 600;
+  display: block;
+  margin-top: 2px;
+}
+
+.card-info {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.info-group label {
+  display: block;
+  font-size: 0.65rem;
+  font-weight: 800;
+  color: #cbd5e1;
+  margin-bottom: 8px;
+  letter-spacing: 0.8px;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.tag {
+  padding: 4px 12px;
+  border-radius: 6px;
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+
+/* Cores das tags baseadas no seu design */
+.tag.speaks {
+  background-color: #ecfdf5;
+  color: #10b981;
+}
+
+.tag.learns {
+  background-color: #eff6ff;
+  color: #3b82f6;
+}
+
+.btn-connect {
+  width: 100%;
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid #e2e8f0;
+  background: white;
+  color: #0A3251;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  cursor: pointer;
+  transition: all 0.2s;
+  margin-top: auto; /* Garante que o botão fique sempre no final */
+}
+
+.btn-connect:hover {
+  background: #f8fafc;
+  border-color: #0A3251;
+  color: #0A3251;
+}
+
+/* Responsividade: ajustar grid no mobile */
+@media (max-width: 768px) {
+  .partner-card {
+    padding: 20px;
+  }
+}

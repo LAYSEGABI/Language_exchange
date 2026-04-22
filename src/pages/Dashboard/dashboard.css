@@ -1,0 +1,76 @@
+.welcome-banner {
+  background: #0A3251;
+  background: linear-gradient(135deg, #0A3251 0%, #1a5c8d 100%);
+  border-radius: 24px;
+  padding: 48px;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 8px;
+}
+
+.banner-text h2 {
+  font-size: 2.2rem;
+  font-style: italic;
+  margin-bottom: 12px;
+  font-family: serif; /* Ou a fonte que você escolheu no Figma */
+}
+
+.banner-text p {
+  font-size: 1.1rem;
+  opacity: 0.9;
+  max-width: 500px;
+}
+
+.btn-register {
+  background: white;
+  color: #0A3251;
+  border: none;
+  padding: 16px 28px;
+  border-radius: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: transform 0.2s;
+}
+
+.btn-register:hover {
+  transform: scale(1.05);
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 48px 0 24px 0;
+}
+
+.section-header h3 {
+  font-size: 1.4rem;
+  color: #1e293b;
+}
+
+.section-header a {
+  color: #0A3251;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 0.9rem;
+}
+
+.partners-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 24px;
+}
+
+@media (max-width: 768px) {
+  .banner-text h2 {
+    font-size: 1.5rem;
+  }
+  .banner-text p {
+    font-size: 0.9rem;
+  }
+}

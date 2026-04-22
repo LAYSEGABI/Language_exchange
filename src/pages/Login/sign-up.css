@@ -1,0 +1,157 @@
+/* Reutilizando as variáveis e o estilo base */
+.signup-page {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+
+/* Aproveita o estilo que já fizemos no Login para as metades */
+.login-side-blue {
+  flex: 1;
+  background-color: #0A3251;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  padding: 40px;
+  text-align: center;
+}
+
+.login-side-blue h1 span {
+  color: #7ABFFF;
+}
+
+/* Lado do Formulário - Ajustado para rolagem se a tela for pequena */
+.login-side-form {
+  flex: 1;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  overflow-y: auto; /* Caso o formulário cresça, ele permite scroll só desse lado */
+}
+
+.form-container {
+  width: 100%;
+  max-width: 450px; /* Um pouco mais largo que o login para caber melhor os campos */
+}
+
+/* Títulos */
+.form-container h2 {
+  font-size: 2rem;
+  color: #0A3251;
+  margin-bottom: 8px;
+}
+
+.form-subtitle {
+  color: #666;
+  margin-bottom: 24px;
+}
+
+/* Grupos de Input */
+.input-group {
+  margin-bottom: 16px; /* Espaçamento um pouco menor para caber tudo */
+}
+
+.input-group label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 6px;
+  font-size: 0.85rem;
+  color: #333;
+}
+
+/* O wrapper que envolve o ícone e o input */
+.input-wrapper {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 10px 14px;
+  gap: 12px;
+  background-color: #fff;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.input-wrapper:focus-within {
+  border-color: #2C6E9D;
+  box-shadow: 0 0 0 3px rgba(44, 110, 157, 0.1);
+}
+
+.input-wrapper input {
+  border: none;
+  outline: none;
+  width: 100%;
+  font-size: 0.95rem;
+  color: #1d1d1d;
+}
+
+.input-wrapper svg {
+  color: #2C6E9D; /* Cor dos ícones lucide */
+}
+
+/* Botão de Solicitação */
+.btn-signup {
+  width: 100%;
+  padding: 14px;
+  background-color: #0A3251;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 1rem;
+  margin-top: 15px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.btn-signup:hover {
+  background-color: #0d4169;
+}
+
+/* Link para voltar ao Login */
+.signup-prompt {
+  text-align: center;
+  margin-top: 24px;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.signup-prompt a {
+  color: #2C6E9D;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.signup-prompt a:hover {
+  text-decoration: underline;
+}
+
+
+/* Coloca os idiomas lado a lado em telas maiores */
+.languages-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+
+.error-message {
+  background-color: #fee2e2;
+  color: #b91c1c;
+  padding: 10px;
+  border-radius: 6px;
+  margin-bottom: 20px;
+  font-size: 0.85rem;
+  text-align: center;
+  border: 1px solid #fecaca;
+}
+
+/* Responsividade para o grid de idiomas */
+@media (max-width: 600px) {
+  .languages-row {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,97 @@
+.sessions-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 0 40px 0;
+}
+
+.sessions-header h2 {
+  font-size: 1.8rem;
+  color: #0A3251;
+  font-weight: 700;
+}
+
+.btn-new-session {
+  background: #0A3251;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 12px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+.btn-new-session:hover {
+  opacity: 0.9;
+}
+
+/* Tabela */
+.table-container {
+  background: white;
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  overflow-x: auto; /* Garante que não quebre no mobile */
+}
+
+.sessions-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.sessions-table th {
+  padding: 16px;
+  font-size: 0.75rem;
+  font-weight: 800;
+  color: #cbd5e1;
+  letter-spacing: 1px;
+  border-bottom: 1px solid #f1f5f9;
+}
+
+.sessions-table td {
+  padding: 20px 16px;
+  font-size: 0.9rem;
+  color: #64748b;
+  border-bottom: 1px solid #f8fafc;
+}
+
+.partner-name {
+  font-weight: 700;
+  color: #1e293b !important;
+}
+
+/* Status Badges */
+.status-badge {
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+
+.status-badge.registada {
+  background: #ecfdf5;
+  color: #10b981;
+}
+
+.status-badge.pendente {
+  background: #fff7ed;
+  color: #f97316;
+}
+
+/* Responsividade Mobile */
+@media (max-width: 768px) {
+  .sessions-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+  .btn-new-session {
+    width: 100%;
+    justify-content: center;
+  }
+}

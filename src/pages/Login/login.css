@@ -1,0 +1,201 @@
+.login-page {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+
+/* Lado Azul */
+.login-side-blue {
+  flex: 1;
+  background-color: #0A3251; /* O azul escuro do seu projeto */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  position: relative;
+  padding: 40px;
+}
+
+.brand-wrapper {
+  z-index: 2;
+  text-align: center;
+}
+
+.login-hero-text h1 {
+  font-size: 2.5rem;
+  margin-top: 20px;
+}
+
+.login-hero-text span {
+  color: #7ABFFF; /* Aquele azul claro do highlight */
+}
+
+.globe-icon-bg {
+  position: absolute;
+  opacity: 0.1;
+  color: white;
+  bottom: -50px;
+  right: -50px;
+}
+
+/* Lado do Formulário */
+.login-side-form {
+  flex: 1;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+}
+
+.form-container {
+  width: 100%;
+  max-width: 400px;
+}
+
+.form-container h2 {
+  font-size: 2rem;
+  color: #1d1d1d;
+  margin-bottom: 8px;
+}
+
+.form-subtitle {
+  color: #666;
+  margin-bottom: 32px;
+}
+
+/* Inputs */
+.input-group {
+  margin-bottom: 20px;
+}
+
+.label-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.input-group label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 8px;
+  font-size: 0.9rem;
+}
+
+.input-wrapper {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 10px 14px;
+  gap: 10px;
+  transition: border-color 0.2s;
+}
+
+.input-wrapper:focus-within {
+  border-color: #2C6E9D;
+}
+
+.input-wrapper input {
+  border: none;
+  outline: none;
+  width: 100%;
+  font-size: 1rem;
+}
+
+/* Botões */
+.btn-login {
+  width: 100%;
+  padding: 14px;
+  background-color: #0A3251;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 1rem;
+  margin-top: 10px;
+}
+
+.divider {
+  text-align: center;
+  margin: 24px 0;
+  color: #999;
+  font-size: 0.85rem;
+  position: relative;
+}
+
+.btn-google {
+  width: 100%;
+  padding: 12px;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  font-weight: 500;
+}
+
+.forgot-password, .signup-prompt a {
+  color: #2C6E9D;
+  text-decoration: none;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+/* Banner de Erro */
+.error-banner {
+  background-color: #fef2f2;
+  border: 1px solid #fee2e2;
+  color: #b91c1c;
+  padding: 12px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+  font-size: 0.85rem;
+  animation: shake 0.2s ease-in-out;
+}
+
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  25% { transform: translateX(-5px); }
+  75% { transform: translateX(5px); }
+}
+
+/* Olhinho da Senha */
+.input-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.toggle-password {
+  background: none;
+  border: none;
+  color: #94a3b8;
+  cursor: pointer;
+  position: absolute;
+  right: 12px;
+  display: flex;
+  align-items: center;
+  padding: 0;
+}
+
+.toggle-password:hover {
+  color: #0A3251;
+}
+
+/* Botão de Esqueceu Senha */
+.forgot-password-btn {
+  background: none;
+  border: none;
+  color: #0A3251;
+  font-size: 0.8rem;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: underline;
+}

@@ -1,0 +1,191 @@
+.dashboard-container {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  background-color: #f8fafc;
+  overflow: hidden;
+}
+
+/* Sidebar Fixa */
+.sidebar {
+  width: 260px;
+  background: white;
+  border-right: 1px solid #e2e8f0;
+  display: flex;
+  flex-direction: column;
+  padding: 32px 24px;
+  flex-shrink: 0;
+}
+
+.sidebar-logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-weight: 800;
+  color: #0A3251;
+  margin-bottom: 48px;
+  font-size: 1.2rem;
+}
+
+.sidebar-nav {
+  flex: 1;
+}
+
+.nav-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 16px;
+  color: #64748b;
+  text-decoration: none;
+  border-radius: 12px;
+  margin-bottom: 8px;
+  font-weight: 500;
+  transition: 0.2s;
+}
+
+.nav-item:hover, .nav-item.active {
+  background-color: #f1f5f9;
+  color: #0A3251;
+}
+
+.btn-logout {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: none;
+  border: none;
+  color: #64748b;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-weight: 600;
+  margin-top: auto;
+}
+
+/* Área de Conteúdo */
+.main-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  padding: 0 48px 48px 48px;
+}
+
+.top-header {
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.community-tag {
+  font-size: 0.75rem;
+  letter-spacing: 1.5px;
+  color: #94a3b8;
+  font-weight: 700;
+}
+
+.user-profile {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.user-info {
+  text-align: right;
+}
+
+.user-info p {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #1e293b;
+  margin: 0;
+}
+
+.user-info span {
+  font-size: 0.75rem;
+  color: #94a3b8;
+}
+
+.avatar {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  border: 2px solid #e2e8f0;
+}
+
+.page-body {
+  flex: 1;
+}
+
+
+/* ... seu código anterior ... */
+
+@media (max-width: 768px) {
+  .dashboard-container {
+    flex-direction: column; /* Empilha o conteúdo em cima da barra */
+  }
+
+  .sidebar {
+    width: 100%;
+    height: 70px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    flex-direction: row; /* Itens um ao lado do outro */
+    padding: 0 10px;
+    border-right: none;
+    border-top: 1px solid #e2e8f0;
+    z-index: 1000;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  /* Esconde o logo e o botão de sair no mobile para caber os itens */
+  .sidebar-logo, .btn-logout {
+    display: none;
+  }
+
+  .sidebar-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    margin: 0;
+  }
+
+  .nav-item {
+    flex-direction: column; /* Ícone em cima, texto embaixo */
+    gap: 4px;
+    font-size: 0.65rem;
+    padding: 8px;
+    margin: 0;
+    background: none !important; /* Remove o fundo cinza no mobile */
+  }
+
+  .nav-item svg {
+    width: 20px;
+    height: 20px;
+  }
+
+  .main-content {
+    padding: 0 20px 100px 20px; /* Padding extra embaixo para não cobrir o conteúdo */
+  }
+
+  .top-header {
+    padding: 10px 0;
+  }
+  
+  /* Ajuste do banner para mobile */
+  .welcome-banner {
+    flex-direction: column;
+    padding: 24px;
+    text-align: center;
+    gap: 20px;
+  }
+}
+
+.nav-item.active svg {
+  color: #0A3251; /* Ou a cor de destaque do seu design */
+}
